@@ -27,7 +27,7 @@ Strong experience in building **secure, scalable, real-time mobile applications*
 ## Projects (Client & Product Apps)
 
 ### Healthcare Applications
-1. KIMS Hospital  
+1. KIMS Hospital  and  MedicoverHospital
 2. Ramesh Hospitals  
 3. Aayush Hospital  
 4. Phase Hospital  
