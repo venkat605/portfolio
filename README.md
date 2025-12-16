@@ -87,7 +87,7 @@ Strong experience in building **secure, scalable, real-time mobile applications*
 ---
 
 ## GitHub
-Sample projects and demo applications:  
+Sample projects and demo applications: https://github.com/VenkatMobileDev2225/ 
 
 ---
 
