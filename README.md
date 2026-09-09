@@ -1,7 +1,7 @@
 # Venkataramana – Flutter Developer
 
 ## About Me
-Flutter developer with 3+ years of professional experience. and hands-on work on **20+ mobile applications** across healthcare, enterprise, media, and business domains.  
+Flutter developer with 6+ years of professional experience. and hands-on work on **20+ mobile applications** across healthcare, enterprise, media, and business domains.  
 Strong experience in building **secure, scalable, real-time mobile applications** with advanced features such as **face authentication, payment gateways, live tracking, and push notifications**.
 
 ---
