@@ -82,7 +82,50 @@ let progressreact = setInterval(() => {
   }
 }, rjsspeed);
 
+ 
+// PostgreSQL progress circular bar
+let postgresProgress = document.querySelector(".postgresql"),
+    postgresValue = document.querySelector(".postgresql-progress");
 
+let postgresStartValue = 0,
+    postgresEndValue = 80,
+    postgresSpeed = 30;
+
+let progressPostgres = setInterval(() => {
+    postgresStartValue++;
+
+    postgresValue.textContent = `${postgresStartValue}%`;
+
+    postgresProgress.style.background =
+        `conic-gradient(#336791 ${postgresStartValue * 3.6}deg, #ededed 0deg)`;
+
+    if (postgresStartValue >= postgresEndValue) {
+        clearInterval(progressPostgres);
+    }
+}, postgresSpeed);
+
+
+// AI / LLM progress circular bar
+let aiProgress = document.querySelector(".ai-llm"),
+    aiValue = document.querySelector(".ai-llm-progress");
+
+let aiStartValue = 0,
+    aiEndValue = 75,
+    aiSpeed = 30;
+
+let progressAI = setInterval(() => {
+    aiStartValue++;
+
+    aiValue.textContent = `${aiStartValue}%`;
+
+    aiProgress.style.background =
+        `conic-gradient(#6f34fe ${aiStartValue * 3.6}deg, #ededed 0deg)`;
+
+    if (aiStartValue >= aiEndValue) {
+        clearInterval(progressAI);
+    }
+}, aiSpeed);
+ 
 // filter using javascript
 $(document).ready(function () {
   $(".filter-item").click(function () {

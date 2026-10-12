@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,8 +11,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous" />
 
     <!-- custom css file -->
     <link rel="stylesheet" href="css/style.css" />
@@ -22,47 +21,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
 
     <!-- bootstrap icon cdn link  -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
-    />
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
 
     <!-- for adding animation to website we have use AOS library 
     AOS Library css file cdn link -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- jquery cdn link  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   </head>
   <body>
     <!-- navbar starts -->
     <nav
       id="navbar-top"
-      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
-    >
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
       <div class="container-fluid px-5">
-        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
-          >Portfolio</a
-        >
+        <a class="navbar-brand fw-bold fs-2" href="#"
+          style="color: #3f396d">Portfolio</a>
         <button
           class="nav-menu d-md-none"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
+          data-bs-target="#navbarNav">
           <i class="bi bi-menu-button-fill"></i>
         </button>
         <div
           class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
-        >
+          id="navbarNav">
           <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#service">Service</a>
@@ -70,413 +67,837 @@
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
-           
+
             <li class="nav-item">
               <a class="nav-link" href="#testimonial">Testimonials</a>
             </li>
-           
           </ul>
         </div>
-       </div>
+      </div>
     </nav>
     <!-- navbar ends here -->
 
     <!-- home section starts  -->
-    <section class="home pt-5 pb-5" id="home">
-      <div class="row justify-content-evenly align-middle">
-        <!-- here data-aos is used for adding aos animation  -->
-        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
-          <h2 style="color: #3f396d">
-            Hello! I Am <br /><span class="c-orange">Venkataramana.sola</span>
-          </h2>
-          <p class="text-muted">
-          Flutter Full Stack Mobile Developer with 6+ years of experience in building scalable Android & iOS applications using Flutter. Developed 20+ mobile apps across Hospital Management, HRMS, POS, Education, and real-time business platforms, with 15+ apps live on Android & iOS.
-          Currently working in 🇧🇭 Bahrain at Micro Center Gulf as a Flutter Full Stack Developer, building enterprise POS applications using Flutter, Node.js, and MongoDB.
-          Skilled in Flutter, REST APIs, Firebase, clean architecture, payment integration, and high-performance mobile application development<button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-            Hire Me
-          </button>
-          <a href="" class="link ms-4 d-none">See My Work</a>
-        </div>
-       <div class="col-10 col-md-4 d-none d-md-block text-center">
-  <img src="images/1776928724804.png" class="img-fluid profile-img" alt="Profile Image" />
-</div>
 
+    <!-- Home Section -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="container">
+        <div class="row align-items-center justify-content-between g-5">
+
+          <!-- Left Content -->
+          <div
+            class="col-12 col-md-7 text-center text-md-start"
+            data-aos="slide-right">
+            <span class="hero-label">
+              FLUTTER FULL STACK DEVELOPER
+            </span>
+
+            <h1 class="hero-title mt-3">
+              Hello! I Am
+              <br />
+              <span class="hero-name">Venkataramana Sola</span>
+            </h1>
+
+            <h4 class="hero-subtitle mt-3">
+              Mobile Apps · Web Development · AI Solutions
+            </h4>
+
+            <p class="hero-description mt-3">
+              Full Stack Developer with 6+ years of experience building
+              scalable Android, iOS, and web applications. Experienced in
+              Flutter, React.js, Python, FastAPI, REST APIs, PostgreSQL,
+              Firebase, AI/LLM integrations, payment gateways, and deployment.
+            </p>
+
+            <!-- Call to Action -->
+            <div class="home-actions mt-4">
+              <a href="#contact" class="hero-btn">
+                Hire Me <i class="bi bi-arrow-right"></i>
+              </a>
+
+              <a href="#skills" class="hero-secondary-btn">
+                Explore My Skills
+              </a>
+            </div>
+
+            <!-- Availability -->
+            <div class="availability mt-4">
+              <span class="availability-badge">
+                <span class="status-dot"></span>
+                Open to Opportunities
+              </span>
+
+              <p class="visa-info mt-3">
+                <i class="bi bi-geo-alt-fill"></i>
+                Currently based in Bahrain
+              </p>
+
+              <p class="visa-info">
+                <i class="bi bi-briefcase-fill"></i>
+                Bahrain Work Visa · Saudi Visit Visa
+              </p>
+
+              <p class="visa-info">
+                <i class="bi bi-globe-asia-australia"></i>
+                Open to opportunities across Bahrain, Saudi Arabia,
+                UAE and other GCC countries.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Profile Image -->
+          <div
+            class="col-12 col-md-5 text-center"
+            data-aos="fade-left">
+            <div class="hero-image-wrapper">
+              <img
+                src="images/1776928724804.png"
+                class="hero-profile-img"
+                alt="Venkataramana Sola - Full Stack Developer" />
+
+              <div class="hero-image-caption">
+                <i class="bi bi-code-slash"></i>
+                Building Mobile, Web & AI Solutions
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
+
     <!-- home section ends here -->
 
+    <section class="expertise mt-5 py-5" id="skills">
+      <div class="container">
+        <!-- Section Heading -->
+        <div class="heading text-center mb-5">
+          <small>Technical Expertise</small>
+          <h3>
+            Full Stack Web-App Development<br />
+            & AI Solutions
+          </h3>
+          <p class="text-muted mt-3">
+            Building scalable mobile applications, web platforms, backend APIs,
+            and AI-powered solutions.
+          </p>
+        </div>
+
+        <div class="row justify-content-center g-4">
+          <!-- AI & Backend Development -->
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="service-card expertise-card h-100">
+              <div class="content">
+                <h4>AI & Backend Development</h4>
+                <p>
+                  AI Agent Development, Python, FastAPI, REST APIs, Large
+                  Language Models (LLMs), RAG, LangChain, API integration, and
+                  backend development.
+                </p>
+                <div class="skill-tags">
+                  <span>Python</span>
+                  <span>FastAPI</span>
+                  <span>LLM</span>
+                  <span>RAG</span>
+                  <span>LangChain</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flutter Mobile Development -->
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="service-card expertise-card h-100">
+              <div class="content">
+                <h4>Flutter Mobile Development</h4>
+                <p>
+                  Cross-platform Android and iOS applications with state
+                  management, authentication, notifications, maps, QR scanning,
+                  and payment integrations.
+                </p>
+                <div class="skill-tags">
+                  <span>Flutter</span>
+                  <span>Provider</span>
+                  <span>Riverpod</span>
+                  <span>Firebase</span>
+                  <span>Google Maps</span>
+                  <span>QR Scanner</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- React Web Development -->
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="service-card expertise-card h-100">
+              <div class="content">
+                <h4>Frontend Web Development</h4>
+                <p>
+                  Responsive web applications with modern UI, component-based
+                  architecture, state management, and utility-first styling.
+                </p>
+                <div class="skill-tags">
+                  <span>React.js</span>
+                  <span>Redux Toolkit</span>
+                  <span>Tailwind CSS</span>
+                  <span>JavaScript</span>
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Database & Storage -->
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="service-card expertise-card h-100">
+              <div class="content">
+                <h4>Database & Cloud Storage</h4>
+                <p>
+                  Database design, data management, application storage, and
+                  integration with backend services.
+                </p>
+                <div class="skill-tags">
+                  <span>PostgreSQL</span>
+                  <span>MongoDB</span>
+                  <span>Firebase Storage</span>
+                  <span>SQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Payments & Authentication -->
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="service-card expertise-card h-100">
+              <div class="content">
+                <h4>Payments & App Integrations</h4>
+                <p>
+                  Payment gateway integration, secure authentication, push
+                  notifications, location services, and third-party API
+                  integrations.
+                </p>
+                <div class="skill-tags">
+                  <span>Razorpay</span>
+                  <span>PayPal</span>
+                  <span>Firebase Auth</span>
+                  <span>Face Authentication</span>
+                  <span>Push Notifications</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testing & Deployment -->
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="service-card expertise-card h-100">
+              <div class="content">
+                <h4>Testing, Deployment & DevOps</h4>
+                <p>
+                  API testing, API documentation, application releases, web
+                  hosting, deployment workflows, and CI/CD pipelines.
+                </p>
+                <div class="skill-tags">
+                  <span>Postman</span>
+                  <span>Swagger / OpenAPI</span>
+                  <span>Git</span>
+                  <span>CI/CD</span>
+                  <span>Render</span>
+                  <span>App Store</span>
+                  <span>Google Play</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- GIS -->
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="service-card expertise-card h-100">
+              <div class="content">
+                <h4>GIS & Location-Based Solutions</h4>
+                <p>
+                  Geographic information systems, map-based interfaces, location
+                  services, and spatial data solutions.
+                </p>
+                <div class="skill-tags">
+                  <span>GIS</span>
+                  <span>ArcGIS</span>
+                  <span>Google Maps</span>
+                  <span>PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- expertise section starts -->
-   
 
-<section class="expertise mt-5" id="service">
-  <div class="heading text-center">
-    <small>My Expertise</small>
-    <h3>
-      End-to-End Mobile App <br />
-      Development Services
-    </h3>
-  </div>
+    <section class="expertise mt-5" id="service">
+      <div class="heading text-center">
+        <small>My Expertise</small>
+        <h3>
+          End-to-End Mobile App <br />
+          Development Services
+        </h3>
+      </div>
 
-  <div class="row justify-content-evenly mt-5">
-
-    <!-- Hospital Management Apps -->
-    <div class="col-10 col-md-4 mb-4" data-aos="fade-up">
-      <div class="service-card text-center">
-        <div class="img">
-          <img src="images/hospital-app.png" class="img-fluid profile-img2" alt="Profile Image2"  />
+      <div class="row justify-content-evenly mt-5">
+        <!-- Hospital Management Apps -->
+        <div class="col-10 col-md-4 mb-4" data-aos="fade-up">
+          <div class="service-card text-center">
+            <div class="img">
+              <img
+                src="images/hospital-app.png"
+                class="img-fluid profile-img2"
+                alt="Profile Image2" />
+            </div>
+            <div class="content mt-3">
+              <h4>Hospital Management Apps</h4>
+              <p class="text-muted">
+                Mobile applications for hospitals including patient management,
+                appointments, billing, reports, and admin dashboards.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="content mt-3">
-          <h4>Hospital Management Apps</h4>
-          <p class="text-muted">
-            Mobile applications for hospitals including patient management,
-            appointments, billing, reports, and admin dashboards.
-          </p>
+
+        <!-- Education Apps -->
+        <div class="col-10 col-md-4 mb-4" data-aos="fade-up">
+          <div class="service-card text-center">
+            <div class="img">
+              <img
+                src="images/education-app.png"
+                class="img-fluid profile-img2"
+                alt="Profile Image2" />
+            </div>
+            <div class="content mt-3">
+              <h4>University, College & School Apps</h4>
+              <p class="text-muted">
+                Education-focused mobile apps for student management,
+                attendance, exams, notifications, and learning platforms.
+              </p>
+            </div>
+          </div>
         </div>
+
+        <!-- HRMS Apps -->
+        <div class="col-10 col-md-4 mb-4" data-aos="fade-up">
+          <div class="service-card text-center">
+            <div class="img">
+              <img
+                src="images/hrms-app.png"
+                class="img-fluid profile-img2"
+                alt="Profile Image2" />
+            </div>
+            <div class="content mt-3">
+              <h4>HRMS & Employee Management Apps</h4>
+              <p class="text-muted">
+                HRMS mobile solutions including attendance, leave management,
+                payroll integration, and employee self-service modules.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Real Estate Apps -->
+        <div class="col-10 col-md-4 mb-4" data-aos="fade-up">
+          <div class="service-card text-center">
+            <div class="img">
+              <img
+                src="images/realestate-app.png"
+                class="img-fluid profile-img2"
+                alt="Profile Image2" />
+            </div>
+            <div class="content mt-3">
+              <h4>Real Estate Mobile Apps</h4>
+              <p class="text-muted">
+                Real estate apps for property listings, inquiries, bookings,
+                agent management, and customer engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hotel Management Apps -->
+        <div class="col-10 col-md-4 mb-4" data-aos="fade-up">
+          <div class="service-card text-center">
+            <div class="img">
+              <img
+                src="images/hotel-app.png"
+                class="img-fluid profile-img2"
+                alt="Profile Image2" />
+            </div>
+            <div class="content mt-3">
+              <h4>Hotel Management Apps</h4>
+              <p class="text-muted">
+                Hotel and hospitality mobile apps for room booking,
+                check-in/check-out, customer management, and staff operations.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Business Analytics Apps -->
+        <div class="col-10 col-md-4 mb-4" data-aos="fade-up">
+          <div class="service-card text-center">
+            <div class="img">
+              <img
+                src="images/analytics-app.png"
+                class="w-25 img-fluid"
+                alt="Business Analytics Mobile Apps" />
+            </div>
+            <div class="content mt-3">
+              <h4>Business Analytics Apps</h4>
+              <p class="text-muted">
+                Data-driven mobile applications with dashboards, reports,
+                charts, and insights to support business decision-making.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-4 mb-4" data-aos="fade-up">
+          <div class="service-card text-center">
+            <div class="img">
+              <img
+                src="images/pos.jpg"
+                class="w-25 img-fluid"
+                alt="POS Mobile Application" />
+            </div>
+
+            <div class="content mt-3">
+              <h4>Enterprise POS Applications</h4>
+
+              <p class="text-muted">
+                Developed modern POS and enterprise Web applications for Micro
+                Center Gulf, 🇧🇭 Bahrain using Flutter, Node.js, and MongoDB
+                with
+                real-time billing, inventory, and order management.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- expertise section ends here -->
+
+    <!-- skill section starts -->
+
+    <!-- Skills Section -->
+    <section class="skill mt-5 py-5" id="about">
+      <div class="container">
+        <div class="row align-items-center justify-content-between g-4">
+
+          <!-- Left: Skill Progress Cards -->
+           
+<!-- Left: Skill Progress Cards -->
+<div
+  class="col-12 col-md-7 skill-with-progress"
+  data-aos="slide-right"
+>
+  <div class="row g-3">
+
+    <!-- Flutter -->
+    <div class="col-4">
+      <div class="progress-card">
+        <div class="circular-progress html-css">
+          <span class="progress-value html-progress">0%</span>
+        </div>
+        <h5 class="skill-title">Flutter</h5>
+        <p class="skill-caption">Mobile Apps</p>
       </div>
     </div>
 
-    <!-- Education Apps -->
-    <div class="col-10 col-md-4 mb-4" data-aos="fade-up">
-      <div class="service-card text-center">
-        <div class="img">
-          <img src="images/education-app.png" class="img-fluid profile-img2" alt="Profile Image2" />
+    <!-- React.js -->
+    <div class="col-4">
+      <div class="progress-card">
+        <div class="circular-progress javascript">
+          <span class="progress-value javascript-progress">0%</span>
         </div>
-        <div class="content mt-3">
-          <h4>University, College & School Apps</h4>
-          <p class="text-muted">
-            Education-focused mobile apps for student management, attendance,
-            exams, notifications, and learning platforms.
-          </p>
-        </div>
+        <h5 class="skill-title">React.js</h5>
+        <p class="skill-caption">Frontend</p>
       </div>
     </div>
 
-    <!-- HRMS Apps -->
-    <div class="col-10 col-md-4 mb-4" data-aos="fade-up">
-      <div class="service-card text-center">
-        <div class="img">
-          <img src="images/hrms-app.png" class="img-fluid profile-img2" alt="Profile Image2"/>
+    <!-- Python -->
+    <div class="col-4">
+      <div class="progress-card">
+        <div class="circular-progress php">
+          <span class="progress-value php-progress">0%</span>
         </div>
-        <div class="content mt-3">
-          <h4>HRMS & Employee Management Apps</h4>
-          <p class="text-muted">
-            HRMS mobile solutions including attendance, leave management,
-            payroll integration, and employee self-service modules.
-          </p>
-        </div>
+        <h5 class="skill-title">Python</h5>
+        <p class="skill-caption">FastAPI</p>
       </div>
     </div>
 
-    <!-- Real Estate Apps -->
-    <div class="col-10 col-md-4 mb-4" data-aos="fade-up">
-      <div class="service-card text-center">
-        <div class="img">
-          <img src="images/realestate-app.png" class="img-fluid profile-img2" alt="Profile Image2" />
+    <!-- PostgreSQL -->
+    <div class="col-4">
+      <div class="progress-card">
+        <div class="circular-progress postgresql">
+          <span class="progress-value postgresql-progress">0%</span>
         </div>
-        <div class="content mt-3">
-          <h4>Real Estate Mobile Apps</h4>
-          <p class="text-muted">
-            Real estate apps for property listings, inquiries, bookings,
-            agent management, and customer engagement.
-          </p>
-        </div>
+        <h5 class="skill-title">PostgreSQL</h5>
+        <p class="skill-caption">Database</p>
       </div>
     </div>
 
-    <!-- Hotel Management Apps -->
-    <div class="col-10 col-md-4 mb-4" data-aos="fade-up">
-      <div class="service-card text-center">
-        <div class="img">
-          <img src="images/hotel-app.png" class="img-fluid profile-img2" alt="Profile Image2" />
+    <!-- Firebase -->
+    <div class="col-4">
+      <div class="progress-card">
+        <div class="circular-progress reactjs">
+          <span class="progress-value reactjs-progress">0%</span>
         </div>
-        <div class="content mt-3">
-          <h4>Hotel Management Apps</h4>
-          <p class="text-muted">
-            Hotel and hospitality mobile apps for room booking,
-            check-in/check-out, customer management, and staff operations.
-          </p>
-        </div>
+        <h5 class="skill-title">Firebase</h5>
+        <p class="skill-caption">Cloud Services</p>
       </div>
     </div>
 
-    <!-- Business Analytics Apps -->
-    <div class="col-10 col-md-4 mb-4" data-aos="fade-up">
-      <div class="service-card text-center">
-        <div class="img">
-          <img src="images/analytics-app.png" class="w-25 img-fluid" alt="Business Analytics Mobile Apps" />
+    <!-- AI / LLM -->
+    <div class="col-4">
+      <div class="progress-card">
+        <div class="circular-progress ai-llm">
+          <span class="progress-value ai-llm-progress">0%</span>
         </div>
-        <div class="content mt-3">
-          <h4>Business Analytics Apps</h4>
-          <p class="text-muted">
-            Data-driven mobile applications with dashboards, reports,
-            charts, and insights to support business decision-making.
-          </p>
-        </div>
+        <h5 class="skill-title">AI / LLM</h5>
+        <p class="skill-caption">RAG & Agents</p>
       </div>
     </div>
-  <div class="col-10 col-md-4 mb-4" data-aos="fade-up">
-  <div class="service-card text-center">
-    <div class="img">
-      <img src="images/pos.jpg" class="w-25 img-fluid" alt="POS Mobile Application" />
-    </div>
 
-    <div class="content mt-3">
-      <h4>Enterprise POS Applications</h4>
-
-      <p class="text-muted">
-        Developed modern POS and enterprise Web applications for
-        Micro Center Gulf, 🇧🇭 Bahrain using Flutter, Node.js,
-        and MongoDB with real-time billing, inventory, and order management.
-      </p>
-    </div>
   </div>
 </div>
 
-  </div>
-</section>
- <!-- expertise section ends here -->
 
-    <!-- skill section starts -->
-  <section class="skill mt-5 py-5" id="about">
-  <div class="row justify-content-evenly">
+          <!-- Right: Skills Description -->
+          <div
+            class="col-12 col-md-5 skill-detail"
+            data-aos="slide-left">
+            <div class="heading">
+              <small>My Technical Expertise</small>
 
-    <!-- Skill Progress -->
-    <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+              <h3>
+                Building Scalable Mobile, Web & AI Solutions
+              </h3>
 
-      <!-- ROW 1 -->
-      <div class="row justify-content-evenly">
-        <!-- Flutter -->
-        <div class="col-10 col-md-6">
-          <div class="progress-card ms-3 ms-md-0">
-            <div class="circular-progress html-css">
-              <span class="progress-value html-progress">0%</span>
+              <p class="text-muted">
+                I am a Flutter Full Stack Developer with 6+ years of
+                experience developing Android, iOS, and web applications
+                for real-world business requirements.
+              </p>
+
+              <p class="text-muted">
+                My expertise includes Flutter, React.js, Python, FastAPI,
+                REST APIs, PostgreSQL, MongoDB, Firebase, AI/LLM integrations,
+                and third-party service integrations.
+              </p>
+
+              <p class="text-muted">
+                I also work with payment gateways, push notifications,
+                Google Maps, QR scanning, app store releases, web hosting,
+                and CI/CD workflows.
+              </p>
+
+              <!-- Additional Technologies -->
+              <div class="expertise-tags">
+                <span>Provider</span>
+                <span>Riverpod</span>
+                <span>Redux Toolkit</span>
+                <span>PostgreSQL</span>
+                <span>Razorpay</span>
+                <span>PayPal</span>
+                <span>LLM / RAG</span>
+                <span>CI/CD</span>
+              </div>
+
+              <!-- Download CV -->
+              <a
+                href="./images/Flutter_Mobile_Developer_Resume.pdf"
+                download="Flutter_Mobile_Developer_Resume.pdf"
+                class="c-btn h-btn mt-4 py-3 px-5 rounded-pill cv-btn">
+                <i class="bi bi-download me-2"></i>
+                Download CV
+              </a>
+
             </div>
-            <br />
-            <span class="text">GoogleMaps</span>
           </div>
-        </div>
 
-        <!-- Dart -->
-        <div class="col-10 col-md-6 mt-4 mt-md-0">
-          <div class="progress-card ms-3 ms-md-0">
-            <div class="circular-progress javascript">
-              <span class="progress-value javascript-progress">0%</span>
-            </div>
-            <br />
-            <span class="text">PushNotifications</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- ROW 2 -->
-      <div class="row justify-content-evenly mt-4">
-        <!-- Firebase -->
-        <div class="col-10 col-md-6">
-          <div class="progress-card ms-3 ms-md-0">
-            <div class="circular-progress php">
-              <span class="progress-value php-progress">0%</span>
-            </div>
-            <br />
-            <span class="text">PayMentGotWay</span>
-          </div>
-        </div>
-
-        <!-- Provider -->
-        <div class="col-10 col-md-6 mt-4 mt-md-0">
-          <div class="progress-card ms-3 ms-md-0">
-            <div class="circular-progress reactjs">
-              <span class="progress-value reactjs-progress">0%</span>
-            </div>
-            <br />
-            <span class="text">Provider</span>
-          </div>
         </div>
       </div>
-    </div>
-
-    <!-- Skill Description (UNCHANGED) -->
-    <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
-      <div class="heading mt-5 mt-md-3">
-        <small>My Skills</small>
-        <h3>Scalable & High-Performance Mobile Applications</h3>
-        <p class="text-muted">
-          I specialize in building high-quality mobile applications using
-          Flutter. I have strong experience in Firebase integration,
-          state management, authentication, and real-time features.
-        </p>
-        <p class="text-muted">
-          I focus on clean architecture, performance optimization, and
-          delivering production-ready mobile apps for real-world business
-          use cases.
-        </p>
-
-        <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-          <a
-            href="Flutter_Mobile_Developer_Resume.pdf"
-            download
-            style="text-decoration: none; color: #fff;"
-          >
-            Download CV
-          </a>
-        </button>
-      </div>
-    </div>
-
-  </div>
-</section>
-
+    </section>
 
     <!-- skill section end here -->
- 
+
     <!-- portfolio section ends here -->
 
     <!-- testimonial section starts  -->
-  <section class="testimonial mt-5 pt-5" id="testimonial">
-  <div class="row justify-content-evenly align-items-center">
+    <section class="testimonial mt-5 pt-5" id="testimonial">
+      <div class="row justify-content-evenly align-items-center">
+        <!-- LEFT IMAGE -->
+        <div class="col-md-4 col-12" data-aos="slide-right">
+          <img
+            src="images/newb.png"
+            class="img-fluid custom-img"
+            alt="Apps" />
+        </div>
 
-    <!-- LEFT IMAGE -->
-  <div class="col-md-6 col-12" data-aos="slide-right">
-  <img src="images/bg.png" class="img-fluid custom-img" alt="Apps" />
-</div>
+        <!-- RIGHT CONTENT -->
+        <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
+          <div class="heading">
+            <small>My Work</small>
+            <h3>Apps I’ve Successfully Delivered</h3>
 
+            <!-- BOOTSTRAP CAROUSEL -->
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <!-- ===== SLIDE 1 : HOSPITAL APPS ===== -->
+                <div class="carousel-item active">
+                  <h5 class="mb-3 text-muted">Hospital Applications</h5>
+                  <div class="row g-3 text-center">
+                    <div class="col-4">
+                      <img src="images/kims.png" class="img-fluid" alt="KIMS" />
+                    </div>
+                    <div class="col-4">
+                      <img
+                        src="images/medicover.png"
+                        class="img-fluid"
+                        alt="Medicover" />
+                    </div>
+                    <div class="col-4">
+                      <img
+                        src="images/aayush.png"
+                        class="img-fluid"
+                        alt="Aayush" />
+                    </div>
 
-    <!-- RIGHT CONTENT -->
-    <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
-      <div class="heading">
-        <small>My Work</small>
-        <h3>Apps I’ve Successfully Delivered</h3>
+                    <div class="col-4">
+                      <img
+                        src="images/sun.png"
+                        class="img-fluid"
+                        alt="PatientCare" />
+                    </div>
+                    <div class="col-4">
+                      <img
+                        src="images/medCamp.png"
+                        class="img-fluid"
+                        alt="MedCamp" />
+                    </div>
+                    <div class="col-4">
+                      <img
+                        src="images/srikara.png"
+                        class="img-fluid"
+                        alt="Kingston" />
+                    </div>
+                  </div>
+                </div>
 
-        <!-- BOOTSTRAP CAROUSEL -->
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <!-- ===== SLIDE 2 : EDUCATION APPS ===== -->
+                <div class="carousel-item">
+                  <h5 class="mb-3 text-muted">School / University Apps</h5>
+                  <div class="row g-3 text-center">
+                    <div class="col-4">
+                      <img
+                        src="images/edu.png"
+                        class="img-fluid"
+                        alt="EduKares" />
+                    </div>
+                    <div class="col-4">
+                      <img
+                        src="images/hrview.png"
+                        class="img-fluid"
+                        alt="HR View" />
+                    </div>
+                    <div class="col-4">
+                      <img
+                        src="images/insale.png"
+                        class="img-fluid"
+                        alt="Insale" />
+                    </div>
+                  </div>
+                </div>
 
-          <div class="carousel-inner">
+                <!-- ===== SLIDE 3 : SERVICE & HOTEL APPS ===== -->
+                <div class="carousel-item">
+                  <h5 class="mb-3 text-muted">Services & Hotel Management</h5>
+                  <div class="row g-3 text-center">
+                    <div class="col-4">
+                      <img
+                        src="images/appLogo.jpg"
+                        class="img-fluid"
+                        alt="Spiffy" />
+                    </div>
+                    <div class="col-4">
+                      <img
+                        src="images/storypitara.png"
+                        class="img-fluid"
+                        alt="StoryRiptra" />
+                    </div>
+                    <div class="col-4">
+                      <img
+                        src="images/cirrilLogo.png"
+                        class="img-fluid"
+                        alt="MultiVendor" />
+                    </div>
 
-            <!-- ===== SLIDE 1 : HOSPITAL APPS ===== -->
-            <div class="carousel-item active">
-              <h5 class="mb-3 text-muted">Hospital Applications</h5>
-              <div class="row g-3 text-center">
-                <div class="col-4"><img src="images/kims.png" class="img-fluid" alt="KIMS" /></div>
-                <div class="col-4"><img src="images/medicover.png" class="img-fluid" alt="Medicover" /></div>
-                <div class="col-4"><img src="images/aayush.png" class="img-fluid" alt="Aayush" /></div>
-
-                <div class="col-4"><img src="images/sun.png" class="img-fluid" alt="PatientCare" /></div>
-                <div class="col-4"><img src="images/medCamp.png" class="img-fluid" alt="MedCamp" /></div>
-                <div class="col-4"><img src="images/srikara.png" class="img-fluid" alt="Kingston" /></div>
+                    <div class="col-4">
+                      <img
+                        src="images/logoFlash.png"
+                        class="img-fluid"
+                        alt="Employee Tracking" />
+                    </div>
+                    <div class="col-4">
+                      <img
+                        src="images/app_icon_2.png"
+                        class="img-fluid"
+                        alt="Pulse" />
+                    </div>
+                  </div>
+                </div>
               </div>
+
+              <!-- CONTROLS -->
+              <button
+                class="nextprev-btn rounded-pill prev-btn"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <i class="bi bi-arrow-left-circle-fill prev"></i>
+              </button>
+
+              <button
+                class="nextprev-btn rounded-pill next-btn"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <i class="bi bi-arrow-right-circle-fill next"></i>
+              </button>
             </div>
-
-            <!-- ===== SLIDE 2 : EDUCATION APPS ===== -->
-            <div class="carousel-item">
-              <h5 class="mb-3 text-muted">School / University Apps</h5>
-              <div class="row g-3 text-center">
-                <div class="col-4"><img src="images/edu.png" class="img-fluid" alt="EduKares" /></div>
-                <div class="col-4"><img src="images/hrview.png" class="img-fluid" alt="HR View" /></div>
-                <div class="col-4"><img src="images/insale.png" class="img-fluid" alt="Insale" /></div>
-
-               </div>
-            </div>
-
-            <!-- ===== SLIDE 3 : SERVICE & HOTEL APPS ===== -->
-            <div class="carousel-item">
-              <h5 class="mb-3 text-muted">Services & Hotel Management</h5>
-              <div class="row g-3 text-center">
-                <div class="col-4"><img src="images/appLogo.jpg" class="img-fluid" alt="Spiffy" /></div>
-                <div class="col-4"><img src="images/storypitara.png" class="img-fluid" alt="StoryRiptra" /></div>
-                <div class="col-4"><img src="images/cirrilLogo.png" class="img-fluid" alt="MultiVendor" /></div>
-
-                <div class="col-4"><img src="images/logoFlash.png" class="img-fluid" alt="Employee Tracking" /></div>
-                <div class="col-4"><img src="images/app_icon_2.png" class="img-fluid" alt="Pulse" /></div>
-              </div>
-            </div>
-
           </div>
-
-          <!-- CONTROLS -->
-          <button class="nextprev-btn rounded-pill prev-btn" type="button"
-            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <i class="bi bi-arrow-left-circle-fill prev"></i>
-          </button>
-
-          <button class="nextprev-btn rounded-pill next-btn" type="button"
-            data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <i class="bi bi-arrow-right-circle-fill next"></i>
-          </button>
-
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- testimonial ends here -->
 
     <!-- blog section starts -->
-     
+
     <!-- blog section ends here -->
 
     <!-- contact section starts -->
-    <section class="contact py-5" id="contact">
-      <div class="heading text-center">
-        <small>Get in Touch</small>
-        <h3>Any Questions? Feel Free to Contact</h3>
-      </div>
-      <div class="row justify-content-evenly mt-5">
-        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-geo-alt-fill"></i>
-            </div>
-            <div class="col-11">
-              <p>Begampet, Shamlal Buildings, Begumpet, Hyderabad, Telangana 500016</p>
-            </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-telephone-fill"></i>
-            </div>
-            <div class="col-11">
-              <p>+91 8897402864</p>
-            </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-send-fill"></i>
-            </div>
-            <div class="col-11">
-              <p>Solavenkataramana2225@gmail.com</p>
-            </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-globe-americas"></i>
-            </div>
-            <div class="col-11">
-               <p>
-                <a href="https://www.linkedin.com/in/sola-venkataramana-94865a24b/" target="_blank">
-                  LinkedIn Profile
-                </a></p>
-              </div>
+     
+ 
+<section class="contact py-5" id="contact">
+  <div class="heading text-center">
+    <small>Get in Touch</small>
+    <h3>Any Questions? Feel Free to Contact</h3>
+  </div>
 
-              <div class="col-11">
-  <p>
-    <a href="https://github.com/VenkatMobileDev2225/" target="_blank">
-      <i class="fab fa-github"></i> GitHub Profile
-    </a>
-  </p>
-</div>
+  <div class="container mt-5">
+    <div class="row g-4 justify-content-center">
+
+      <!-- Left Side: Addresses -->
+      <div class="col-lg-6 col-12 contact-details" data-aos="slide-right">
+
+        <div class="contact-card">
+          <i class="bi bi-geo-alt-fill"></i>
+          <div>
+            <h6>India</h6>
+            <p>Begampet, Shamlal Buildings, Begumpet,
+              Hyderabad, Telangana 500016</p>
           </div>
         </div>
-      
+
+        <div class="contact-card">
+          <i class="bi bi-geo-alt-fill"></i>
+          <div>
+            <h6>Bahrain</h6>
+            <p>Manama, Bahrain</p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <i class="bi bi-geo-alt-fill"></i>
+          <div>
+            <h6>Saudi Arabia</h6>
+            <p>Near GOSI, Riyadh, Saudi Arabia</p>
+          </div>
+        </div>
+
       </div>
-    </section>
+
+      <!-- Right Side: Contact Information -->
+      <div class="col-lg-6 col-12 contact-details" data-aos="slide-left">
+
+        <div class="contact-card">
+          <i class="bi bi-telephone-fill"></i>
+          <div>
+            <h6>India Mobile</h6>
+            <p><a href="tel:+918897402864">+91 8897402864</a></p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <i class="bi bi-telephone-fill"></i>
+          <div>
+            <h6>Bahrain Mobile</h6>
+            <p><a href="tel:+97336409816">+973 36409816</a></p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <i class="bi bi-envelope-fill"></i>
+          <div>
+            <h6>Email</h6>
+            <p>
+              <a href="mailto:Solavenkataramana2225@gmail.com">
+                Solavenkataramana2225@gmail.com
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <i class="bi bi-linkedin"></i>
+          <div>
+            <h6>LinkedIn</h6>
+            <p>
+              <a href="https://www.linkedin.com/in/sola-venkataramana-94865a24b/"
+                 target="_blank" rel="noopener noreferrer">
+                LinkedIn Profile
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <i class="bi bi-github"></i>
+          <div>
+            <h6>GitHub</h6>
+            <p>
+              <a href="https://github.com/VenkatMobileDev2225/"
+                 target="_blank" rel="noopener noreferrer">
+                GitHub Profile
+              </a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+ 
+
     <!-- contact section ends here -->
 
-      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
     <button
       type="button"
       class="btn btn-floating btn-lg rounded-pill"
-      id="btn-back-to-top"
-    >
+      id="btn-back-to-top">
       <i class="bi bi-arrow-up"></i>
     </button>
 
@@ -490,21 +911,20 @@
         <div class="vr"></div>
         <a href="#service">Service</a>
         <div class="vr"></div>
-     
-        
+
         <div class="vr"></div>
         <a href="#contact">Contact</a>
       </div>
       <div class="social-links mt-5" data-aos="fade-up">
-        <button href="" class="rounded-pill dribble">
+        <button href class="rounded-pill dribble">
           <i class="bi bi-dribbble"></i>
         </button>
         <a href="https://wa.me/9188907402864" target="_blank">
-  <button class="rounded-pill whatsapp">
-    <i class="bi bi-whatsapp"></i>
-  </button>
-</a>
-        <button href="" class="rounded-pill behance">
+          <button class="rounded-pill whatsapp">
+            <i class="bi bi-whatsapp"></i>
+          </button>
+        </a>
+        <button href class="rounded-pill behance">
           <i class="bi bi-behance"></i>
         </button>
       </div>
@@ -514,12 +934,11 @@
     </footer>
     <!-- footer section ends here -->
 
-      <!-- bootstrap javascript cdn link  -->
+    <!-- bootstrap javascript cdn link  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
 
     <!-- AOS library javascript link  -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -532,6 +951,5 @@
     </script>
     <!-- custom js file linking -->
     <script src="js/script.js"></script>
-    
   </body>
 </html>
